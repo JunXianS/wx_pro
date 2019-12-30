@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-tab": "../../../miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "../../../miniprogram_npm/@vant/weapp/tabs/index",
+    "wxparse": "../../../assets/wxparse/wxparse",
+    "van-goods-action": "../../../miniprogram_npm/@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "../../../miniprogram_npm/@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "../../../miniprogram_npm/@vant/weapp/goods-action-button/index"
+  }
+}

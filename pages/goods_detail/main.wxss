@@ -1,0 +1,103 @@
+.goods_detail_container{
+  padding-bottom: 50rpx!important;
+}
+.van-tabs {
+  z-index: 0;
+}
+swiper {
+  height: 750rpx;
+}
+
+swiper  image {
+  width: 100%;
+  height: 100%;
+}
+
+.goods_info .sep_line {
+  border-bottom: 15rpx solid #efefef;
+}
+
+.goods_info .box1 {
+  padding: 0 10rpx;
+}
+
+.box1 .price {
+  font-size: 40rpx;
+  color: red;
+  margin: 20rpx 0;
+}
+
+.box1 .goods_name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 .goods_name .left {
+  font-size: 26rpx;
+  padding-right: 40rpx;
+}
+
+.box1 .goods_name .right {
+  width: 200rpx;
+  text-align: center;
+  border-left: 1rpx solid #eee;
+}
+
+.box1 .goods_name .right>view {
+  font-size: 20rpx;
+}
+
+.box1  .yunfei {
+  font-size: 26rpx;
+  color: #666;
+  font-weight: bold;
+  line-height: 80rpx;
+}
+
+.box2 {
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}
+
+.box2>view {
+  line-height: 80rpx;
+}
+
+.box2>view text:nth-child(1) {
+  margin-right: 20rpx;
+}
+
+.box2>view text:nth-child(2) {
+  color: #666;
+}
+
+.box3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  padding: 25rpx 10rpx 25rpx 10rpx;
+}
+
+.box3 > view text:nth-child(1) {
+  margin-right: 20rpx;
+}
+
+.box3 > view text:nth-child(2) {
+  color: #666;
+}
+
+.tab2 {
+  font-size: 24rpx;
+}
+
+.tab2 .van-row {
+  border-top: 1rpx solid #eee;
+}
+
+.tab2 .van-row .van-col {
+  padding: 25rpx 0 25rpx 10rpx;
+}
+
+.tab2 .van-row .van-col:nth-child(1) {
+  border-right: 1rpx solid #eee;
+}

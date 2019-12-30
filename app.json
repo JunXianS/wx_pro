@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/tabs/tabhome/tabhome",
+    "pages/tabs/tabcates/tabcates",
+    "pages/tabs/tabsearch/tabsearch",
+    "pages/tabs/tabcart/tabcart",
+    "pages/tabs/tabme/tabme",
+    "pages/goods_detail/main",
+    "pages/main/main",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goods_list/goods_list"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "微信小程序框架",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#eee",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/tabs/tabhome/tabhome",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/tabs/tabcates/tabcates",
+        "text": "分类",
+        "iconPath": "assets/icons/cates.png",
+        "selectedIconPath": "assets/icons/cates-active.png"
+      },
+      {
+        "pagePath": "pages/tabs/tabsearch/tabsearch",
+        "text": "搜索",
+        "iconPath": "assets/icons/search.png",
+        "selectedIconPath": "assets/icons/search-active.png"
+      },
+      {
+        "pagePath": "pages/tabs/tabcart/tabcart",
+        "text": "导航other",
+        "iconPath": "assets/icons/cart.png",
+        "selectedIconPath": "assets/icons/cart-active.png"
+      },
+      {
+        "pagePath": "pages/tabs/tabme/tabme",
+        "text": "我的",
+        "iconPath": "assets/icons/my.png",
+        "selectedIconPath": "assets/icons/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

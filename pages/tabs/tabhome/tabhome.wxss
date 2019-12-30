@@ -1,0 +1,61 @@
+/* pages/tabs/tabhome/tabhome.wxss */
+
+swiper {
+  height: 350rpx;
+}
+
+swiper  navigator, swiper image {
+  height: 100%;
+  width: 750rpx;
+}
+
+/* 分类区域 */
+
+.cates {
+  display: flex;
+  justify-content: space-around;
+  margin: 30rpx 0;
+}
+
+.cates navigator {
+  border: 1rpx solid #eee;
+}
+
+.cates image {
+  padding: 10rpx;
+  width: 130rpx;
+  height: 130rpx;
+}
+
+/* 楼层区域 */
+
+.floor-container  .floor-item .floor-item-title {
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 700rpx;
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+  padding: 10rpx;
+  margin-left: 10px;
+  position: relative;
+}
+.floor-container  .floor-item .floor-item-title:after{
+  content: '';
+  width: 7rpx;
+ height: 40rpx;
+ background:#2ba245;
+  position: absolute;
+  top:18rpx;
+  left: -5rpx;
+}
+
+.floor-container  .floor-item .floor-img-box  .floor-item-pic {
+  float: left;
+  height: 190rpx;
+  margin: 4rpx;
+  margin-top: 0;
+}
+
+.floor-container  .floor-item .floor-img-box  .floor-item-pic:nth-child(1) {
+  height: 390rpx;
+}

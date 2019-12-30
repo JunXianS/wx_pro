@@ -1,0 +1,4 @@
+/* pages/tabs/tabme/tabme.wxss */
+.cates-container {
+  display: flex;
+}

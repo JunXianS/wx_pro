@@ -1,0 +1,27 @@
+<!-- 搜索框 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:change="onChange" bind:cancel="onCancel" />
+<van-cell-group wx:if="{{!m1.isShowHistory(value)}}">
+  <block wx:for="{{suggestList}}" wx:key="index">
+    <van-cell bindtap="gotoDetail" data-goodId="{{item.goods_id}}" title="{{item.goods_name}}" />
+  </block>
+</van-cell-group>
+<!-- 历史记录 -->
+<view wx:else>
+  <view class="history-title">
+    <text>历史记录</text>
+    <van-icon name="delete" bindtap="delList"/>
+  </view>
+  <view class="history-body">
+   <van-tag size="large" wx:for="{{kwList}}" wx:key="index" class="tag" data-item="{{item}}" bindtap="goToList">{{item}}</van-tag>
+  </view>
+</view>
+
+<wxs module="m1">
+  var isShowHistory = function(value) {
+    if (value.length <= 0) {
+      return true
+    }
+    return false
+  }
+  module.exports.isShowHistory = isShowHistory;
+</wxs>
