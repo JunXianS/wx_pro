@@ -45,14 +45,24 @@ function wxPromise(url, method, data = {}) {
     wx.request({
       url:baseURL + url,
       data: data,
-      header: {},
+      header: {
+        cookie: 'JSESSIONID=' + wx.getStorageSync('JSESSIONID')||'',
+        'content-type': 'application/x-www-form-urlencoded'
+      },
       method: method.toUpperCase(), // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       success: function (res) {
+        console.log('res', res.statusCode)
+        if (res.statusCode =='502'){
+          wx.showToast({
+            title: "网络连接失败,请稍后重试"
+          })
+        }
         wx.hideNavigationBarLoading()
         wx.hideLoading()
         resove(res.data)
       },
       fail: function (msg) {
+       
         wx.hideNavigationBarLoading()
         wx.hideLoading()
         reject('fail')
